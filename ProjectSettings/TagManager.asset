@@ -41,8 +41,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: FakeBack
+    uniqueID: 262245543
+    locked: 0
   - name: Gato
     uniqueID: 3061035829
+    locked: 0
+  - name: Background
+    uniqueID: 1943176721
+    locked: 0
+  - name: Sobrepor grama
+    uniqueID: 2761909107
     locked: 0
   m_RenderingLayers:
   - Default
