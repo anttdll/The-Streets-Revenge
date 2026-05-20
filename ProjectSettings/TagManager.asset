@@ -53,5 +53,20 @@ TagManager:
   - name: Sobrepor grama
     uniqueID: 2761909107
     locked: 0
+  - name: Background
+    uniqueID: 3406733203
+    locked: 0
+  - name: Background3
+    uniqueID: 1389813597
+    locked: 0
+  - name: Background2
+    uniqueID: 2187557287
+    locked: 0
+  - name: Player
+    uniqueID: 2719947397
+    locked: 0
+  - name: New Layer 7
+    uniqueID: 3017490371
+    locked: 0
   m_RenderingLayers:
   - Default
