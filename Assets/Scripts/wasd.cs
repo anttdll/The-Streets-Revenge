@@ -1,68 +1,63 @@
 using UnityEngine;
 
+
+
 public class wasd : MonoBehaviour
 
-{
 
-    int speed = 5;
+
+{
+    private float Horizontal;
+    private float Vertical;
+
+
+
+    Vector2 movement;
+
+
+
+    int speed = 3;
+    private Rigidbody2D _rb;
+
+
+
+
 
     void Start()
 
-    {
 
+
+    {
+        _rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
 
-    void Update()
+
+    // Update is called once per frame
+
+
+
+    void Update()
+
+
 
     {
+        float _horizontal = Input.GetAxis("Horizontal");
+        float _vertical = Input.GetAxis("Vertical");
 
-        float moveX = 0;
 
-        float moveY = 0;
 
-        if (Input.GetKey(KeyCode.A))
+        _rb.linearVelocity = new Vector2(_horizontal * speed, _vertical * speed);
 
-        {
 
-            moveX = -1;
 
-        }
 
-        if (Input.GetKey(KeyCode.D))
 
-        {
-
-            moveX = 1;
-
-        }
-
-        if (Input.GetKey(KeyCode.W))
-
-        {
-
-            moveY = 1;
-
-        }
-
-        if ((Input.GetKey(KeyCode.S)))
-
-        {
-
-            moveY = -1;
-
-        }
-
-       
-
-        Vector3 movement = new Vector3(moveX, moveY, 0f).normalized;
-
-        transform.position += movement * speed * Time.deltaTime;
 
 
 
     }
+    }
 
-}
+
 
