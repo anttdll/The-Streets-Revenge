@@ -47,6 +47,9 @@ TagManager:
   - name: Gato
     uniqueID: 3061035829
     locked: 0
+  - name: Vinicius
+    uniqueID: 228406357
+    locked: 0
   - name: Background
     uniqueID: 1943176721
     locked: 0
@@ -67,6 +70,9 @@ TagManager:
     locked: 0
   - name: New Layer 7
     uniqueID: 3017490371
+    locked: 0
+  - name: "GatoLan\xE7ado"
+    uniqueID: 3620427767
     locked: 0
   m_RenderingLayers:
   - Default
