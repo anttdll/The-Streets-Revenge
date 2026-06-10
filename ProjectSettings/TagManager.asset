@@ -59,14 +59,17 @@ TagManager:
   - name: Background2
     uniqueID: 2187557287
     locked: 0
-  - name: Player
-    uniqueID: 2719947397
-    locked: 0
   - name: Casas
     uniqueID: 2170004127
     locked: 0
   - name: New Layer 7
     uniqueID: 3017490371
+    locked: 0
+  - name: Player
+    uniqueID: 2719947397
+    locked: 0
+  - name: placa e poste
+    uniqueID: 773755229
     locked: 0
   - name: "GatoLan\xE7ado"
     uniqueID: 3620427767
@@ -76,6 +79,9 @@ TagManager:
     locked: 0
   - name: Vinicius
     uniqueID: 228406357
+    locked: 0
+  - name: New Layer 14
+    uniqueID: 3929608907
     locked: 0
   m_RenderingLayers:
   - Default
