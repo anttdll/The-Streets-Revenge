@@ -16,7 +16,7 @@ public class wasd : MonoBehaviour
 
 
 
-    int speed = 3;
+    int speed = 6;
     private Rigidbody2D _rb;
 
 
