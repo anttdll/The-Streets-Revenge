@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 576772196}
   - component: {fileID: 576772195}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Canhao
   projetil: {fileID: -6469341980101450959, guid: cfea7f5ff91bea04e809e315c489ecea, type: 3}
-  velocidade: 5
+  velocidade: 15
   timeBetween: 2
   direction: {fileID: 1859814453}
 --- !u!4 &576772196
@@ -160,13 +160,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576772194}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.17626, y: -1.764, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.31653872, w: 0.9485796}
+  m_LocalPosition: {x: 0.062428474, y: 0.04315889, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1620175151}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 1859814453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &670045664
 GameObject:
@@ -358,7 +357,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1085823144}
   - component: {fileID: 1085823145}
-  m_Layer: 0
+  - component: {fileID: 1085823146}
+  m_Layer: 6
   m_Name: canhaoo_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,12 +374,12 @@ Transform:
   m_GameObject: {fileID: 1085823143}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.31653872, w: 0.9485796}
-  m_LocalPosition: {x: 0.475, y: -0.029, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -7.6645, y: -3.6325, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1859814453}
-  m_Father: {fileID: 1620175151}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 36.907}
 --- !u!212 &1085823145
 SpriteRenderer:
@@ -425,8 +425,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 228406357
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_Sprite: {fileID: -3798314699136530893, guid: 51ce28cbdb6e5ad4eba4e55c9547eaf5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -439,6 +439,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1085823146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085823143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b382c8115fe0b4496c3403926c467f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::canhaoRotate
 --- !u!1 &1160417975
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,7 +551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1620175151}
   - component: {fileID: 1620175152}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: canhaoembaio_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,12 +567,11 @@ Transform:
   m_GameObject: {fileID: 1620175150}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.39, y: -1.29, z: 0}
+  m_LocalPosition: {x: -7.902, y: -3.6179998, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1085823144}
-  m_Father: {fileID: 576772196}
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1620175152
 SpriteRenderer:
@@ -606,8 +617,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -365358389
+  m_SortingLayer: 14
   m_SortingOrder: 0
   m_Sprite: {fileID: 6213963031026870799, guid: 2aa9a7dec8a278e4b9df4bc513970249, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -811,7 +822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1859814453}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Direcao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -826,11 +837,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859814452}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.67, y: 1.15, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.534002, y: 1.5279944, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 576772196}
   m_Father: {fileID: 1085823144}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2020421624
@@ -933,4 +945,5 @@ SceneRoots:
   - {fileID: 2020421626}
   - {fileID: 670045666}
   - {fileID: 1160417977}
-  - {fileID: 576772196}
+  - {fileID: 1620175151}
+  - {fileID: 1085823144}

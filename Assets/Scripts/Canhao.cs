@@ -10,33 +10,40 @@ public class Canhao : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(timeBetween <= 0)
+        //if (timebetween <= 0)
+        //{
+        //    fire();
+
+        //    timebetween = 2f;
+        //}
+        //else
+        //{
+        //    timebetween -= time.deltatime;
+        //}
+
+        //if (input.getkey(keycode.a))
+        //{
+        //    vector3 girar = new vector3(0, 0, 90);
+        //}
+
+
+        if (Input.GetMouseButtonDown(0))
         {
             Fire();
-
-            timeBetween = 2f;
         }
-        else
+
+
+        void Fire()
         {
-                       timeBetween -= Time.deltaTime;
+            Rigidbody2D rb = Instantiate(projetil, transform.position, direction.transform.rotation);
+
+            rb.linearVelocity = direction.transform.right * velocidade;
         }
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            Vector3 girar = new Vector3(0, 0, 90);
-        }
-    }
-
-    void Fire()
-    {
-         Rigidbody2D rb = Instantiate(projetil, transform.position, direction.transform.rotation);
-
-        rb.linearVelocity = transform.right * velocidade;
     }
 }
