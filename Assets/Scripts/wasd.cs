@@ -16,7 +16,7 @@ public class wasd : MonoBehaviour
 
 
 
-    int speed = 6;
+    int speed = 2-0;
     private Rigidbody2D _rb;
 
 
@@ -47,7 +47,7 @@ public class wasd : MonoBehaviour
 
 
 
-        _rb.linearVelocity = new Vector2(_horizontal * speed, _vertical * speed);
+        _rb.linearVelocity = new Vector2(_horizontal * speed, _vertical * speed).normalized;
 
 
 
