@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vinicius caminhando 4
+  m_Name: AndarY
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,11 +21,11 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -6632534952843631991, guid: ecde254f11e70c347b57dd144f44367c, type: 3}
-    - time: 0.083333336
-      value: {fileID: -6775214635023966698, guid: ecde254f11e70c347b57dd144f44367c, type: 3}
+      value: {fileID: -3239020860768247694, guid: ecde254f11e70c347b57dd144f44367c, type: 3}
     - time: 0.16666667
-      value: {fileID: -3659038185252011332, guid: ecde254f11e70c347b57dd144f44367c, type: 3}
+      value: {fileID: -6324464445655134254, guid: ecde254f11e70c347b57dd144f44367c, type: 3}
+    - time: 0.33333334
+      value: {fileID: 3445511842220067698, guid: ecde254f11e70c347b57dd144f44367c, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,15 +48,15 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -6632534952843631991, guid: ecde254f11e70c347b57dd144f44367c, type: 3}
-    - {fileID: -6775214635023966698, guid: ecde254f11e70c347b57dd144f44367c, type: 3}
-    - {fileID: -3659038185252011332, guid: ecde254f11e70c347b57dd144f44367c, type: 3}
+    - {fileID: -3239020860768247694, guid: ecde254f11e70c347b57dd144f44367c, type: 3}
+    - {fileID: -6324464445655134254, guid: ecde254f11e70c347b57dd144f44367c, type: 3}
+    - {fileID: 3445511842220067698, guid: ecde254f11e70c347b57dd144f44367c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.25
+    m_StopTime: 0.4166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
