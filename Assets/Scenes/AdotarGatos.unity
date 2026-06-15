@@ -3927,6 +3927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f923e3485be7954e954149185899691, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::wasd
+  velocidade: 5
 --- !u!212 &2007310256
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3994,8 +3995,8 @@ Transform:
   m_GameObject: {fileID: 2007310254}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.03, y: 4.18, z: 0}
-  m_LocalScale: {x: 1.5795, y: 1.2980001, z: 1}
+  m_LocalPosition: {x: -15.45, y: 3.84, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
