@@ -1,31 +1,10 @@
 fileFormatVersion: 2
-guid: c101245c72cc99d40af58533650f371e
+guid: 7ab2cfcf5fb43a44e9bfc492b25902af
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2936382306354969499
-    second: arremessando_0
-  - first:
-      213: 4821952488648435803
-    second: arremessando_1
-  - first:
-      213: -8076484710804080045
-    second: arremessando_2
-  - first:
-      213: -3037091032524364838
-    second: arremessando_3
-  - first:
-      213: 1238349771173155987
-    second: arremessando_4
-  - first:
-      213: -6198876095942844870
-    second: arremessando_5
-  - first:
-      213: -3248219388267598771
-    second: arremessando_6
-  - first:
-      213: -6027910247808892073
-    second: arremessando_7
+      213: -4466345514735641745
+    second: CasaBatalha-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -160,133 +139,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arremessando_0
+      name: CasaBatalha-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 476
-        y: 536
-        width: 125
-        height: 99
+        x: 84
+        y: 23
+        width: 482
+        height: 374
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b9bb707662020c820800000000000000
-      internalID: 2936382306354969499
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arremessando_1
-      rect:
-        serializedVersion: 2
-        x: 633
-        y: 525
-        width: 135
-        height: 119
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 30, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b5863b99d340be240800000000000000
-      internalID: 4821952488648435803
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arremessando_2
-      rect:
-        serializedVersion: 2
-        x: 822
-        y: 579
-        width: 118
-        height: 99
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 35a36a252ff8aef80800000000000000
-      internalID: -8076484710804080045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arremessando_3
-      rect:
-        serializedVersion: 2
-        x: 990
-        y: 544
-        width: 120
-        height: 91
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ad36cdf0cc51ad5d0800000000000000
-      internalID: -3037091032524364838
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arremessando_4
-      rect:
-        serializedVersion: 2
-        x: 1008
-        y: 635
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 394567a4e808f2110800000000000000
-      internalID: 1238349771173155987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arremessando_5
-      rect:
-        serializedVersion: 2
-        x: 323
-        y: 534
-        width: 124
-        height: 97
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a3e9aa6a80b29f9a0800000000000000
-      internalID: -6198876095942844870
+      spriteID: f6bd5060b6a5402c0800000000000000
+      internalID: -4466345514735641745
       vertices: []
       indices: 
       edges: []
@@ -295,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b22e3e9eb1640914999baf94397583b0
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -305,14 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      arremessando_0: 2936382306354969499
-      arremessando_1: 4821952488648435803
-      arremessando_2: -8076484710804080045
-      arremessando_3: -3037091032524364838
-      arremessando_4: 1238349771173155987
-      arremessando_5: -6198876095942844870
-      arremessando_6: -3248219388267598771
-      arremessando_7: -6027910247808892073
+      CasaBatalha-removebg-preview_0: -4466345514735641745
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
