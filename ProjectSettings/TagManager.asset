@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Damage01
+  - Inimigo
   layers:
   - Default
   - TransparentFX
