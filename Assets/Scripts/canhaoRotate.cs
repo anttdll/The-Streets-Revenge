@@ -2,26 +2,28 @@ using UnityEngine;
 
 public class canhaoRotate : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public float velocidade = 90f;
+    public float anguloMin = -28f;
+    public float anguloMax = 40f;
 
-    // Update is called once per frame
+    private float anguloAtual = 0f;
+
     void Update()
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(0, 0, 90 * Time.deltaTime);
-
+            anguloAtual += velocidade * Time.deltaTime;
         }
+
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(0, 0, -90 * Time.deltaTime);
+            anguloAtual -= velocidade * Time.deltaTime;
         }
-        Mathf.Clamp(transform.rotation.z, -90, 90);
+
+        // Limita entre -40 e 40
+        anguloAtual = Mathf.Clamp(anguloAtual, anguloMin, anguloMax);
+
+        // Aplica a rotação
+        transform.rotation = Quaternion.Euler(0, 0, anguloAtual);
     }
 }
-
-
