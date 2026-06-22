@@ -450,6 +450,7 @@ GameObject:
   - component: {fileID: 305503926}
   - component: {fileID: 305503925}
   - component: {fileID: 305503930}
+  - component: {fileID: 305503932}
   m_Layer: 0
   m_Name: gato4
   m_TagString: Untagged
@@ -630,7 +631,7 @@ Transform:
   m_GameObject: {fileID: 305503924}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.5511, y: -4.6039, z: 0}
+  m_LocalPosition: {x: -30.91, y: -4.66, z: 0}
   m_LocalScale: {x: 1.442, y: 1.15528, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -658,6 +659,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &305503932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305503924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace46d49615b2e44abb3ef4157ac4ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TocarSomAoColidir
 --- !u!1 &430321574
 GameObject:
   m_ObjectHideFlags: 0
@@ -3995,8 +4008,8 @@ Transform:
   m_GameObject: {fileID: 2007310254}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.45, y: 3.84, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -15.7151, y: 3.1264, z: 0}
+  m_LocalScale: {x: 0.8215, y: 0.7218, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
