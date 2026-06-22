@@ -1,63 +1,42 @@
 using UnityEngine;
 
-
-
 public class wasd : MonoBehaviour
-
-
-
 {
-    private float Horizontal;
-    private float Vertical;
+    [Header("Configurações de Movimento")]
+    public float velocidade = 5f;
 
-
-
-    Vector2 movement;
-
-
-
-    int speed = 2-0;
-    private Rigidbody2D _rb;
-
-
-
-
+    private Rigidbody2D rb;
+    private Animator animator;
+    private Vector2 movimento;
 
     void Start()
-
-
-
     {
-        _rb = GetComponent<Rigidbody2D>();
+        // Captura os componentes automaticamente do mesmo Objeto
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
-
-
-    // Update is called once per frame
-
-
-
-    void Update()
-
-
-
+    void Update()
     {
-        float _horizontal = Input.GetAxis("Horizontal");
-        float _vertical = Input.GetAxis("Vertical");
+        // Captura as teclas WASD ou Setas do teclado (-1, 0 ou 1)
+        movimento.x = Input.GetAxisRaw("Horizontal");
+        movimento.y = Input.GetAxisRaw("Vertical");
 
+        // Atualiza a direção no Animator apenas se o jogador estiver se movendo.
+        // Isso faz o personagem continuar olhando para a última direção quando parar.
+        if (movimento != Vector2.zero)
+        {
+            animator.SetFloat("Horizontal", movimento.x);
+            animator.SetFloat("Vertical", movimento.y);
+        }
 
-
-        _rb.linearVelocity = new Vector2(_horizontal * speed, _vertical * speed).normalized;
-
-
-
-
-
-
-
-
+        // Informa ao Animator se o jogador está parado (0) ou se movendo (maior que 0)
+        animator.SetFloat("Speed", movimento.sqrMagnitude);
     }
+
+    void FixedUpdate()
+    {
+        // Aplica a física de movimento de forma suave e normalizada para evitar andar mais rápido na diagonal
+        rb.MovePosition(rb.position + movimento.normalized * velocidade * Time.fixedDeltaTime);
     }
-
-
-
+}
