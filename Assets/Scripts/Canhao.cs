@@ -6,7 +6,7 @@ public class Canhao : MonoBehaviour
     public float velocidade;
     public float timeBetween = 0.7f;
     public Transform direction;
-    private float nextFireTime = 0f;
+    private float nextFireTime = 0.7f;
 
     void Start()
     {
