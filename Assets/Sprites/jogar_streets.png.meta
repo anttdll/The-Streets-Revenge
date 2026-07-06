@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 307fd3f5f6e66e24b9ee89517d81c3de
+guid: 96c01a77d2de4fa4fa034fbe816355e4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1493234058564937952
-    second: placa_0
+      213: 448876935671125313
+    second: jogar_streets_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,12 +139,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: placa_0
+      name: jogar_streets_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 33
-        width: 115
+        x: 90
+        y: 68
+        width: 495
         height: 238
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 027d8b40987f64be0800000000000000
-      internalID: -1493234058564937952
+      spriteID: 1451b8ad13bba3600800000000000000
+      internalID: 448876935671125313
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      placa_0: -1493234058564937952
+      jogar_streets_0: 448876935671125313
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

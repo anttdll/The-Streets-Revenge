@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6570387410102820324}
   - component: {fileID: -6469341980101450959}
   - component: {fileID: -1146700739251127973}
+  - component: {fileID: -3193228694555819783}
   m_Layer: 0
   m_Name: "GatoLan\xE7ado"
   m_TagString: Damage01
@@ -225,3 +226,15 @@ PolygonCollider2D:
       - {x: -0.044999998, y: -0.355}
       - {x: 0.125, y: -0.355}
   m_UseDelaunayMesh: 0
+--- !u!114 &-3193228694555819783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7762511835329449833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5ed596a23e9b640a181ff89f0c7ef6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestruirAoColidir

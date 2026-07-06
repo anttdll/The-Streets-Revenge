@@ -4,46 +4,27 @@ public class Canhao : MonoBehaviour
 {
     public Rigidbody2D projetil;
     public float velocidade;
-
-    public float timeBetween;
+    public float timeBetween = 0.7f;
     public Transform direction;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private float nextFireTime = 0.7f;
+
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //if (timebetween <= 0)
-        //{
-        //    fire();
-
-        //    timebetween = 2f;
-        //}
-        //else
-        //{
-        //    timebetween -= time.deltatime;
-        //}
-
-        //if (input.getkey(keycode.a))
-        //{
-        //    vector3 girar = new vector3(0, 0, 90);
-        //}
-
-
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && Time.time >= nextFireTime)
         {
             Fire();
+            nextFireTime = Time.time + timeBetween;
         }
+    }
 
-
-        void Fire()
-        {
-            Rigidbody2D rb = Instantiate(projetil, transform.position, direction.transform.rotation);
-
-            rb.linearVelocity = direction.transform.right * velocidade;
-        }
+    void Fire()
+    {
+        Rigidbody2D rb = Instantiate(projetil, transform.position, direction.transform.rotation);
+        rb.linearVelocity = direction.transform.right * velocidade;
     }
 }

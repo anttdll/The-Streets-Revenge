@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9d212d53b1d62bc458bc013e95211112
+guid: bcd1a295bdb2c1d4f884e4066ac7ba00
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 370493452872101112
-    second: rua_0
+      213: -8168862979975651150
+    second: sair_streets_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rua_0
+      name: sair_streets_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 887
-        height: 1773
+        x: 79
+        y: 66
+        width: 510
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8fcac0a15d1442500800000000000000
-      internalID: 370493452872101112
+      spriteID: 2b066b3766e52ae80800000000000000
+      internalID: -8168862979975651150
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      rua_0: 370493452872101112
+      sair_streets_0: -8168862979975651150
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
