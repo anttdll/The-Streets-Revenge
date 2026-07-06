@@ -18,7 +18,7 @@ public class QuitPlay : MonoBehaviour
 
    public void Jogar()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("AdotarGatos");
     }
 
 
