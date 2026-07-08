@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Damage01
   - Inimigo
+  - gato
   layers:
   - Default
   - TransparentFX
