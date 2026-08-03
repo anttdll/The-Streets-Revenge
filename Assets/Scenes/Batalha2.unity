@@ -643,8 +643,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TrocarSpriteColisao
   spriteMeioDestruido: {fileID: 3767231016057222308, guid: e9e80d9577c7dc14790053df0461852c, type: 3}
   spriteCompletamenteDestruido: {fileID: 7190411573751542802, guid: 16b18ba916e8ca040adccf15c9bbc724, type: 3}
-  batidasParaMeioDestruir: 5
-  batidasParaDestruirTotal: 10
+  batidasParaMeioDestruir: 3
+  batidasParaDestruirTotal: 5
 --- !u!82 &333145788
 AudioSource:
   m_ObjectHideFlags: 0

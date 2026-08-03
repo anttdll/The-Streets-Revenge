@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class destruit : MonoBehaviour
 {
-    public static int pegarItem;
-    void OnCollisionEnter2D(Collision2D collision)
+    [SerializeField]public static int pegarItem;
+    [SerializeField] void OnCollisionEnter2D(Collision2D collision)
         {
 
 

@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AdotarGatos.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Batalha2.unity
+    guid: f213ee1ce3fea96429ad86643f4978eb
+  - enabled: 1
+    path: Assets/Scenes/CuidarGato.unity
+    guid: f87a56c002fe6aa4d93ac967180bed5b
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: bbd4cf551ee9ad94da14b18d6d981b56
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

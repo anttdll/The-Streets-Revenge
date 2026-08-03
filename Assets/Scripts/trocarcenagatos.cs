@@ -1,28 +1,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ColetarItens : MonoBehaviour
+public class trocarcenagatos : MonoBehaviour
 {
-    public int itensColetados = 0;
     public int totalItensNecessarios = 5;
-    public string proximaCena = "batalha2";
+    public string proximaCena = "Batalha2";
 
-    private void OnTriggerEnter(Collider other)
+    void Update()
     {
-        if (other.CompareTag("gato"))
+        if (destruit.pegarItem >= totalItensNecessarios)
         {
-            Destroy(other.gameObject);
-            itensColetados++;
-
-            if (itensColetados >= totalItensNecessarios)
-            {
-                TrocarDeCena();
-            }
+            SceneManager.LoadScene(proximaCena);
         }
-    }
-
-    void TrocarDeCena()
-    {
-        SceneManager.LoadScene(proximaCena);
     }
 }
