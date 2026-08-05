@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class GerenciadorDeCenas : MonoBehaviour
 {
-    public void MudarCena(string AdotarGatos)
+    public void MudarCena()
     {
-        SceneManager.LoadScene(AdotarGatos);
+        SceneManager.LoadScene("AdotarGatos");
     }
 }
