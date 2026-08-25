@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Damage01
-  - Inimigo
   - gato
+  - Inimigo
+  - Damage01
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -14,7 +15,6 @@ TagManager:
   - 
   - Water
   - UI
-  - canhao
   - 
   - 
   - 
@@ -29,8 +29,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Layer 1
+  - Layer 2
+  - Layer 3
   - 
   - 
   - 
@@ -41,56 +42,29 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: chao
-    uniqueID: 817910983
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: FakeBack
-    uniqueID: 262245543
+  - name: Layer 1
+    uniqueID: 2425651459
     locked: 0
-  - name: Background
-    uniqueID: 1943176721
+  - name: Layer 2
+    uniqueID: 4250941897
     locked: 0
-  - name: Sobrepor grama
-    uniqueID: 2761909107
-    locked: 0
-  - name: Background
-    uniqueID: 3406733203
-    locked: 0
-  - name: Background3
-    uniqueID: 1389813597
-    locked: 0
-  - name: Background2
-    uniqueID: 2187557287
-    locked: 0
-  - name: Casas
-    uniqueID: 2170004127
-    locked: 0
-  - name: New Layer 7
-    uniqueID: 3017490371
-    locked: 0
-  - name: Player
-    uniqueID: 2719947397
-    locked: 0
-  - name: placa e poste
-    uniqueID: 773755229
-    locked: 0
-  - name: "GatoLan\xE7ado"
-    uniqueID: 3620427767
+  - name: Layer 3
+    uniqueID: 4189426099
     locked: 0
   - name: Gato
-    uniqueID: 3061035829
+    uniqueID: 1789893691
     locked: 0
-  - name: Vinicius
-    uniqueID: 228406357
+  - name: Inimigo
+    uniqueID: 2159197067
     locked: 0
-  - name: Boca Canhao
-    uniqueID: 3988817107
+  - name: Player
+    uniqueID: 3806130439
     locked: 0
-  - name: New Layer 14
-    uniqueID: 3929608907
+  - name: Ui
+    uniqueID: 2600471749
     locked: 0
   m_RenderingLayers:
   - Default

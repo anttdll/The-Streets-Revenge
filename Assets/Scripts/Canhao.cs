@@ -8,23 +8,31 @@ public class Canhao : MonoBehaviour
     public Transform direction;
     private float nextFireTime = 0.7f;
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && Time.time >= nextFireTime)
         {
-            Fire();
-            nextFireTime = Time.time + timeBetween;
+            // Só atira se tiver gato disponível
+            if (destruit.pegarItem > 0)
+            {
+                Fire();
+
+                // Gastou 1 gato
+                destruit.pegarItem--;
+
+                nextFireTime = Time.time + timeBetween;
+            }
         }
     }
 
     void Fire()
     {
-        Rigidbody2D rb = Instantiate(projetil, transform.position, direction.transform.rotation);
+        Rigidbody2D rb = Instantiate(
+            projetil,
+            transform.position,
+            direction.transform.rotation
+        );
+
         rb.linearVelocity = direction.transform.right * velocidade;
     }
 }
