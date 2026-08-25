@@ -7,6 +7,13 @@ public class GatoProjetil : MonoBehaviour
     public float damage = 1f;
     public float lifeTime = 2f;
 
+    [Header("Animação")]
+    public Sprite[] frames; // Arraste os 3 Sprites fatiados aqui
+    public float animationSpeed = 0.15f; // Velocidade da troca de quadros
+    private SpriteRenderer sr;
+    private int currentFrame = 0;
+    private float timer;
+
     private Vector2 direction;
     private Rigidbody2D rb;
     private bool hasHit = false;
@@ -17,11 +24,24 @@ public class GatoProjetil : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     void Start()
     {
         Destroy(gameObject, lifeTime);
+
+        // Garante que a bala comece no primeiro quadro da animação
+        if (frames.Length > 0)
+        {
+            sr.sprite = frames[0];
+        }
+    }
+
+    void Update()
+    {
+        // Lógica da animação (roda sempre)
+        AnimateProjectile();
     }
 
     void FixedUpdate()
@@ -29,6 +49,28 @@ public class GatoProjetil : MonoBehaviour
         if (rb != null)
         {
             rb.linearVelocity = direction * speed;
+        }
+    }
+
+    // Método para fazer o loop da animação
+    void AnimateProjectile()
+    {
+        if (frames.Length <= 1) return; // Se não tiver frames, não anima
+
+        timer += Time.deltaTime;
+
+        if (timer >= animationSpeed)
+        {
+            timer = 0;
+            currentFrame++;
+
+            // Se chegou no último quadro, volta para o primeiro (loop)
+            if (currentFrame >= frames.Length)
+            {
+                currentFrame = 0;
+            }
+
+            sr.sprite = frames[currentFrame];
         }
     }
 
