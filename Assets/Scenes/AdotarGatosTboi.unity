@@ -1060,7 +1060,7 @@ MonoBehaviour:
   attackRange: 1.5
   damage: 1
   attackCooldown: 0.5
-  visionRange: 10
+  visionRange: 5
   stopDistance: 1
   dropItem: {fileID: 0}
   dropChance: 0.3
@@ -5841,7 +5841,7 @@ MonoBehaviour:
   attackRange: 1.5
   damage: 1
   attackCooldown: 0.5
-  visionRange: 10
+  visionRange: 5
   stopDistance: 1
   dropItem: {fileID: 0}
   dropChance: 0.3
@@ -6151,7 +6151,7 @@ MonoBehaviour:
   attackRange: 1.5
   damage: 1
   attackCooldown: 0.5
-  visionRange: 10
+  visionRange: 5
   stopDistance: 1
   dropItem: {fileID: 0}
   dropChance: 0.3

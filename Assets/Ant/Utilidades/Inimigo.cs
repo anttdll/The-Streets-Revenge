@@ -49,7 +49,7 @@ public class Inimigo : MonoBehaviour
         // IA de perseguição
         if (distanceToPlayer < visionRange && distanceToPlayer > stopDistance)
         {
-            // Persegue o jogador
+            // Persegue 
             Vector2 direction = ((Vector2)player.position - rb.position).normalized;
             rb.linearVelocity = direction * moveSpeed;
 
@@ -59,10 +59,10 @@ public class Inimigo : MonoBehaviour
         }
         else if (distanceToPlayer <= stopDistance)
         {
-            // Parado, pronto para atacar
+            // pronto pra ataq
             rb.linearVelocity = Vector2.zero;
 
-            // Ataca se estiver perto
+            // ataka se tive perto!
             if (!isAttacking)
             {
                 Attack();
@@ -91,11 +91,11 @@ public class Inimigo : MonoBehaviour
         isAttacking = true;
         attackTimer = attackCooldown;
 
-        // Animação de ataque
+        // animacao de ataque
         if (animator != null)
             animator.SetTrigger("Attack");
 
-        // Causa dano no player
+        // dano no player
         PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
         if (playerHealth != null)
         {
@@ -135,13 +135,13 @@ public class Inimigo : MonoBehaviour
     {
         Debug.Log("Inimigo morreu!");
 
-        // Drop de item
+        // dropa item (se pa)
         if (dropItem != null && Random.value < dropChance)
         {
             Instantiate(dropItem, transform.position, Quaternion.identity);
         }
 
-        // Efeito de morte (partículas, som)
+        // Efeito de morte (bota particula, som, seila)
         Destroy(gameObject);
     }
 
