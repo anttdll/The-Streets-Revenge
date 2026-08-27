@@ -15,8 +15,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - Room
   - 
   - 
   - 
@@ -56,6 +56,9 @@ TagManager:
     locked: 0
   - name: Gato
     uniqueID: 1789893691
+    locked: 0
+  - name: Porta
+    uniqueID: 3927790865
     locked: 0
   - name: Inimigo
     uniqueID: 2159197067
