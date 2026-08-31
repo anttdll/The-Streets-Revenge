@@ -90,26 +90,19 @@ public class GatoProjetil : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (hasHit) return;
-
         if (other.CompareTag("Inimigo"))
         {
             hasHit = true;
 
             Inimigo inimigo = other.GetComponent<Inimigo>();
+            if (inimigo != null) inimigo.TakeDamage(damage);
 
-            if (inimigo != null)
-            {
-                inimigo.TakeDamage(damage);
-            }
+            InimigoAtirador atirador = other.GetComponent<InimigoAtirador>();
+            if (atirador != null) atirador.TakeDamage(damage);
 
-            if (hitEffect != null)
-            {
-                Instantiate(hitEffect, transform.position, Quaternion.identity);
-            }
-
+            if (hitEffect != null) Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
-
         if (other.CompareTag("Wall"))
         {
             Destroy(gameObject);

@@ -14,6 +14,7 @@ public class Room : MonoBehaviour
 
     private bool roomCleared = false;
     private bool playerEntered = false;
+    public bool IsActive { get; private set; } = true; // salas sem trava começam ativas
 
     private void Awake()
     {
@@ -34,8 +35,16 @@ public class Room : MonoBehaviour
 
         if (!roomCleared && enemies.Count > 0)
         {
+            IsActive = false;
+            StartCoroutine(ActivateRoomDelayed());
             StartCoroutine(LockDoorsDelayed());
         }
+    }
+
+    private System.Collections.IEnumerator ActivateRoomDelayed()
+    {
+        yield return new WaitForSeconds(0.5f);
+        IsActive = true;
     }
 
     private System.Collections.IEnumerator LockDoorsDelayed()

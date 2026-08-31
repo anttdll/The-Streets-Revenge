@@ -45,17 +45,21 @@ public class Inimigo : MonoBehaviour
     {
         if (isDead || player == null) return;
 
-        // só persegue se o player estiver na mesma sala deste inimigo
-        if (parentRoom != null && CameraController.Instance.CurrentRoom != parentRoom)
+        if (parentRoom != null && (CameraController.Instance.CurrentRoom != parentRoom || !parentRoom.IsActive))
         {
             rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
+        if (!HasLineOfSightToPlayer())
+        {
+            rb.linearVelocity = Vector2.zero; // fica parado sem ver o player
             return;
         }
 
         Vector2 dir = (player.position - transform.position).normalized;
         rb.linearVelocity = dir * moveSpeed;
     }
-
     public void TakeDamage(float amount)
     {
         if (isDead) return;
@@ -103,5 +107,19 @@ public class Inimigo : MonoBehaviour
                 ph.TakeDamage(contactDamage);
             }
         }
+    }
+
+    [Header("Linha de visão")]
+    public LayerMask obstacleLayer; // define no Inspector: só a layer "Obstaculo"
+
+    private bool HasLineOfSightToPlayer()
+    {
+        Vector2 origin = transform.position;
+        Vector2 target = player.position;
+
+        RaycastHit2D hit = Physics2D.Linecast(origin, target, obstacleLayer);
+
+        // se o Linecast não acertou nada na layer de obstáculo, a visão está livre
+        return hit.collider == null;
     }
 }

@@ -32,7 +32,7 @@ TagManager:
   - Layer 1
   - Layer 2
   - Layer 3
-  - 
+  - Obstacle
   - 
   - 
   - 
@@ -68,6 +68,9 @@ TagManager:
     locked: 0
   - name: Ui
     uniqueID: 2600471749
+    locked: 0
+  - name: Obstaculo
+    uniqueID: 4183915127
     locked: 0
   m_RenderingLayers:
   - Default
