@@ -1,0 +1,1014 @@
+fileFormatVersion: 2
+guid: 297ad22aab45b9241bb28b23458e32a9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6392281208062826146
+    second: tboii_0
+  - first:
+      213: 6802075990564567689
+    second: tboii_1
+  - first:
+      213: -5210362594888288911
+    second: tboii_2
+  - first:
+      213: 1853618699131865190
+    second: tboii_3
+  - first:
+      213: -270256218788505077
+    second: tboii_4
+  - first:
+      213: -6057802185031238107
+    second: tboii_5
+  - first:
+      213: 937284967369883612
+    second: tboii_6
+  - first:
+      213: 6231463005010506077
+    second: tboii_7
+  - first:
+      213: 7410243924370750293
+    second: tboii_8
+  - first:
+      213: -8423830785986083770
+    second: tboii_9
+  - first:
+      213: 5848338721453525317
+    second: tboii_10
+  - first:
+      213: -7193959761564725937
+    second: tboii_11
+  - first:
+      213: 5870240230715805197
+    second: tboii_12
+  - first:
+      213: 5415296292718348494
+    second: tboii_13
+  - first:
+      213: -4642348191424143456
+    second: tboii_14
+  - first:
+      213: -5214429007768869854
+    second: tboii_15
+  - first:
+      213: 3082873065825815828
+    second: tboii_16
+  - first:
+      213: -8090972416398041884
+    second: tboii_17
+  - first:
+      213: -3389100421527000265
+    second: tboii_18
+  - first:
+      213: 7058182626313805648
+    second: tboii_19
+  - first:
+      213: 8720307238403433028
+    second: tboii_20
+  - first:
+      213: 6445560625909143869
+    second: tboii_21
+  - first:
+      213: 9127541847115433238
+    second: tboii_22
+  - first:
+      213: -2621314848698788409
+    second: tboii_23
+  - first:
+      213: 3819731936334055173
+    second: tboii_24
+  - first:
+      213: -7620454880063817036
+    second: tboii_25
+  - first:
+      213: -8180217718253561809
+    second: tboii_26
+  - first:
+      213: -3506547174250302473
+    second: tboii_27
+  - first:
+      213: 4461121012116679076
+    second: tboii_28
+  - first:
+      213: -1958014254642426767
+    second: tboii_29
+  - first:
+      213: -3934238707938037618
+    second: tboii_30
+  - first:
+      213: -3005730466055063658
+    second: tboii_31
+  - first:
+      213: -1745399018360381829
+    second: tboii_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tboii_0
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 25
+        width: 1901
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e59a209eb1e0a47a0800000000000000
+      internalID: -6392281208062826146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_1
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 673
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a70d01314d56e50800000000000000
+      internalID: 6802075990564567689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_2
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 661
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17573bc53d211b7b0800000000000000
+      internalID: -5210362594888288911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_3
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 659
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668c6cec26069b910800000000000000
+      internalID: 1853618699131865190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_4
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 644
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a55c0a66bdf3cf0800000000000000
+      internalID: -270256218788505077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_5
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 628
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52eb0a1220d5eeba0800000000000000
+      internalID: -6057802185031238107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_6
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 628
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf356d36b7e10d00800000000000000
+      internalID: 937284967369883612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_7
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 616
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d51b3ac569a9a7650800000000000000
+      internalID: 6231463005010506077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_8
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 610
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b7d1b869976d660800000000000000
+      internalID: 7410243924370750293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_9
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 465
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644cc41188a881b80800000000000000
+      internalID: -8423830785986083770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_10
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 456
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5494662d419792150800000000000000
+      internalID: 5848338721453525317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_11
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 450
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d0b7b46bbe92c90800000000000000
+      internalID: -7193959761564725937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_12
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 431
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ec5025368477150800000000000000
+      internalID: 5870240230715805197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_13
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 85
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec887f8694ff62b40800000000000000
+      internalID: 5415296292718348494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_14
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 79
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af9c768ae0139fb0800000000000000
+      internalID: -4642348191424143456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_15
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 79
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224a175d170a2a7b0800000000000000
+      internalID: -5214429007768869854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_16
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 81
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41dca2838b098ca20800000000000000
+      internalID: 3082873065825815828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_17
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 83
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec5c11847717bf80800000000000000
+      internalID: -8090972416398041884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_18
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 81
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ba1c27f1f77f0d0800000000000000
+      internalID: -3389100421527000265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_19
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 83
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f9449e3b3b3f160800000000000000
+      internalID: 7058182626313805648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_20
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 67
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442ed4d2b31c40970800000000000000
+      internalID: 8720307238403433028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_21
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 74
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d391f8d3d3b337950800000000000000
+      internalID: 6445560625909143869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_22
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 63
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61504dd33fa8bae70800000000000000
+      internalID: 9127541847115433238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_23
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 63
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c51ade88083f9bd0800000000000000
+      internalID: -2621314848698788409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_24
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 65
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507086255f9620530800000000000000
+      internalID: 3819731936334055173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_25
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 63
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba77e659a4be3690800000000000000
+      internalID: -7620454880063817036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_26
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 71
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28d32e63570a7e80800000000000000
+      internalID: -8180217718253561809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_27
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 69
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f339aa6ced365fc0800000000000000
+      internalID: -3506547174250302473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_28
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 69
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9ee3bace519ed30800000000000000
+      internalID: 4461121012116679076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_29
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 49
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c03eec86cb3d4e0800000000000000
+      internalID: -1958014254642426767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_30
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 63
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e80f2c75db6c669c0800000000000000
+      internalID: -3934238707938037618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_31
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 63
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697f730f0108946d0800000000000000
+      internalID: -3005730466055063658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tboii_32
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 47
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e505f17d817c7e0800000000000000
+      internalID: -1745399018360381829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tboii_0: -6392281208062826146
+      tboii_1: 6802075990564567689
+      tboii_10: 5848338721453525317
+      tboii_11: -7193959761564725937
+      tboii_12: 5870240230715805197
+      tboii_13: 5415296292718348494
+      tboii_14: -4642348191424143456
+      tboii_15: -5214429007768869854
+      tboii_16: 3082873065825815828
+      tboii_17: -8090972416398041884
+      tboii_18: -3389100421527000265
+      tboii_19: 7058182626313805648
+      tboii_2: -5210362594888288911
+      tboii_20: 8720307238403433028
+      tboii_21: 6445560625909143869
+      tboii_22: 9127541847115433238
+      tboii_23: -2621314848698788409
+      tboii_24: 3819731936334055173
+      tboii_25: -7620454880063817036
+      tboii_26: -8180217718253561809
+      tboii_27: -3506547174250302473
+      tboii_28: 4461121012116679076
+      tboii_29: -1958014254642426767
+      tboii_3: 1853618699131865190
+      tboii_30: -3934238707938037618
+      tboii_31: -3005730466055063658
+      tboii_32: -1745399018360381829
+      tboii_4: -270256218788505077
+      tboii_5: -6057802185031238107
+      tboii_6: 937284967369883612
+      tboii_7: 6231463005010506077
+      tboii_8: 7410243924370750293
+      tboii_9: -8423830785986083770
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
