@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2828443878184214787}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.49, y: -0.32856, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Inimigo
   maxHealth: 5
   moveSpeed: 2.5
-  player: {fileID: 6169373780897532190, guid: 5b5c3253eb1342a4db7c0b08facc9d02, type: 3}
+  player: {fileID: 0}
   hitFlashColor: {r: 1, g: 0, b: 0, a: 1}
   hitFlashDuration: 0.1
   parentRoom: {fileID: 0}

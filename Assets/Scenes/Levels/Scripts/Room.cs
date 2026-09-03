@@ -21,10 +21,7 @@ public class Room : MonoBehaviour
         BoxCollider2D box = GetComponent<BoxCollider2D>();
         box.isTrigger = true;
         roomBounds = box.bounds;
-
-        // remove da lista qualquer inimigo nulo (segurança)
-        enemies.RemoveAll(e => e == null);
-        roomCleared = enemies.Count == 0;
+        // NÃO detecta inimigos aqui — quem registra é o EnemySpawner
     }
 
     // chamado pelo RoomTrigger quando o player entra na sala
@@ -33,7 +30,11 @@ public class Room : MonoBehaviour
         if (playerEntered) return;
         playerEntered = true;
 
+        Debug.Log(name + " - OnPlayerEnter chamado. Enemies count: " + enemies.Count + " | roomCleared: " + roomCleared);
+
         if (!roomCleared && enemies.Count > 0)
+        
+        
         {
             IsActive = false;
             StartCoroutine(ActivateRoomDelayed());
@@ -90,5 +91,10 @@ public class Room : MonoBehaviour
 
     }
 
-    
+    public void ForceMarkCleared()
+    {
+        roomCleared = true;
+    }
+
+
 }

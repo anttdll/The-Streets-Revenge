@@ -59,7 +59,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8062570780283259163}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.26, y: -2.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -214,7 +214,7 @@ MonoBehaviour:
   maxHealth: 5
   moveSpeed: 1.5
   preferredDistance: 5
-  player: {fileID: 6169373780897532190, guid: 5b5c3253eb1342a4db7c0b08facc9d02, type: 3}
+  player: {fileID: 0}
   projetilPrefab: {fileID: 1015956398870579584, guid: a09ecd630d7b6f14999dbdc1dd5004ef,
     type: 3}
   firePoint: {fileID: 7844407231428653427}

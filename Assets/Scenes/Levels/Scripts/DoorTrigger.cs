@@ -12,7 +12,7 @@ public class DoorTrigger : MonoBehaviour
     public DoorDirection direction;
 
     [Tooltip("Distância de margem da borda da sala pra evitar reentrar no trigger")]
-    public float edgeMargin = 1f;
+    public float edgeMargin = 1.5f;
 
     private bool isTeleporting = false;
 
