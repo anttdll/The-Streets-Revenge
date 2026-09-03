@@ -89,6 +89,9 @@ public class GatoProjetil : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        Boss boss = other.GetComponent<Boss>();
+        if (boss != null) boss.TakeDamage(damage);
+
         if (hasHit) return;
         if (other.CompareTag("Inimigo"))
         {

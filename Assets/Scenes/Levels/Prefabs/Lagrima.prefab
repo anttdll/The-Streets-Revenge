@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4486796102290819163}
   - component: {fileID: 3803748926896161708}
   - component: {fileID: -1596949307685541540}
+  - component: {fileID: -2817085169167938051}
   m_Layer: 0
   m_Name: Lagrima
   m_TagString: gato
@@ -222,3 +223,18 @@ MonoBehaviour:
   lifeTime: 3
   frames: []
   animationSpeed: 0.15
+--- !u!114 &-2817085169167938051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015956398870579584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d49ea7a75d1f364ab0935bc8fd26521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossProjetil
+  speed: 6
+  damage: 1
+  lifeTime: 4
