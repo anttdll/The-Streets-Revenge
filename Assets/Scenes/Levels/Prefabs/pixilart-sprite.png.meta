@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: caa42ac97e2159f48bc656699186fef8
+guid: b73b291c7fa540e40a243c319c16cf07
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6248741079362886434
-    second: Boss_0
+      213: 4689240166119133576
+    second: pixilart-sprite_0
   - first:
-      213: 2287940250583960180
-    second: Boss_1
+      213: 4521018998857404175
+    second: pixilart-sprite_1
   - first:
-      213: 4935984790844978548
-    second: Boss_2
-  - first:
-      213: -1341004319433955295
-    second: Boss_3
+      213: -4621546931983276131
+    second: pixilart-sprite_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 22
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,132 +102,71 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss_0
+      name: pixilart-sprite_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 16
-        width: 73
-        height: 75
+        x: 3
+        y: 4
+        width: 19
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 1}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed42f2778130849a0800000000000000
-      internalID: -6248741079362886434
+      spriteID: 88156002617831140800000000000000
+      internalID: 4689240166119133576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_1
+      name: pixilart-sprite_1
       rect:
         serializedVersion: 2
-        x: 114
-        y: 25
-        width: 73
-        height: 51
+        x: 27
+        y: 6
+        width: 20
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47a006f298560cf10800000000000000
-      internalID: 2287940250583960180
+      spriteID: f0f00b973d2edbe30800000000000000
+      internalID: 4521018998857404175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_2
+      name: pixilart-sprite_2
       rect:
         serializedVersion: 2
-        x: 216
-        y: 27
-        width: 79
-        height: 26
+        x: 52
+        y: 8
+        width: 20
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 475bb0be304208440800000000000000
-      internalID: 4935984790844978548
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boss_3
-      rect:
-        serializedVersion: 2
-        x: 317
-        y: 24
-        width: 71
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 128efd92dabc36de0800000000000000
-      internalID: -1341004319433955295
+      spriteID: d9727562d87fcdfb0800000000000000
+      internalID: -4621546931983276131
       vertices: []
       indices: 
       edges: []
@@ -239,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a7ea85a6f8d79cf428b83c816fa0af66
     internalID: 0
     vertices: []
     indices: 
@@ -249,10 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Boss_0: -6248741079362886434
-      Boss_1: 2287940250583960180
-      Boss_2: 4935984790844978548
-      Boss_3: -1341004319433955295
+      pixilart-sprite_0: 4689240166119133576
+      pixilart-sprite_1: 4521018998857404175
+      pixilart-sprite_2: -4621546931983276131
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

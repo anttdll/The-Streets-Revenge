@@ -30,15 +30,9 @@ public class Room : MonoBehaviour
         if (playerEntered) return;
         playerEntered = true;
 
-        Debug.Log(name + " - OnPlayerEnter chamado. Enemies count: " + enemies.Count + " | roomCleared: " + roomCleared);
-
         if (!roomCleared && enemies.Count > 0)
-        
-        
         {
-            IsActive = false;
-            StartCoroutine(ActivateRoomDelayed());
-            StartCoroutine(LockDoorsDelayed());
+            foreach (Door d in doors) if (d != null) d.Lock();
         }
     }
 

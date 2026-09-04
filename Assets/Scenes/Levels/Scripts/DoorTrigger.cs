@@ -4,21 +4,22 @@ public class DoorTrigger : MonoBehaviour
 {
     public enum DoorDirection { Horizontal, Vertical }
 
-    [Tooltip("As duas salas que esta porta conecta")]
     public Room roomA;
     public Room roomB;
-
-    [Tooltip("Horizontal = porta na parede esquerda/direita | Vertical = porta na parede topo/baixo")]
     public DoorDirection direction;
+    public float edgeMargin = 1f;
 
-    [Tooltip("Distância de margem da borda da sala pra evitar reentrar no trigger")]
-    public float edgeMargin = 1.5f;
+    [HideInInspector] public bool playerInside = false;
 
     private bool isTeleporting = false;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Player") || isTeleporting) return;
+        if (!other.CompareTag("Player")) return;
+
+        playerInside = true;
+
+        if (isTeleporting) return;
 
         Room current = CameraController.Instance.CurrentRoom;
         Room target = null;
@@ -32,6 +33,14 @@ public class DoorTrigger : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInside = false;
+        }
+    }
+
     private void TeleportPlayer(Transform player, Room target)
     {
         isTeleporting = true;
@@ -42,20 +51,17 @@ public class DoorTrigger : MonoBehaviour
 
         if (direction == DoorDirection.Horizontal)
         {
-            // decide se entra pela esquerda ou direita da nova sala
             bool enteringFromLeft = playerPos.x < transform.position.x;
             newPos.x = enteringFromLeft
                 ? targetBounds.min.x + edgeMargin
                 : targetBounds.max.x - edgeMargin;
-            // mantém o Y (altura) igual à posição por onde o player atravessou
         }
-        else // Vertical
+        else
         {
             bool enteringFromBelow = playerPos.y < transform.position.y;
             newPos.y = enteringFromBelow
                 ? targetBounds.min.y + edgeMargin
                 : targetBounds.max.y - edgeMargin;
-            // mantém o X (largura) igual à posição por onde o player atravessou
         }
 
         player.position = newPos;
@@ -63,6 +69,7 @@ public class DoorTrigger : MonoBehaviour
         CameraController.Instance.SetCurrentRoom(target);
         target.OnPlayerEnter();
 
+        playerInside = false; // já foi teleportado pra longe, não está mais "dentro"
         isTeleporting = false;
     }
 }

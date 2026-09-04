@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -389273194613742270}
   m_Layer: 0
   m_Name: Bala lancado
-  m_TagString: Untagged
+  m_TagString: gato
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,8 +78,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1789893691
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 7100757809047929424, guid: 6b416b427515e9444867a795321f125c,
     type: 3}
@@ -137,7 +137,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.27272728, y: 0.25}
+  m_Size: {x: 0.18593597, y: 0.1704413}
   m_EdgeRadius: 0
 --- !u!114 &-389273194613742270
 MonoBehaviour:
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossLobbedProjetil
   arcHeight: 3
-  travelTime: 1.2
+  travelTime: 1.6
   damage: 1
   damageRadius: 1.2
   warningIndicatorPrefab: {fileID: 0}

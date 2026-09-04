@@ -4,8 +4,24 @@ using UnityEngine.SceneManagement;
 public class QuitPlay : MonoBehaviour
 {
 
+    
+     [Header("Painéis")]
+    public GameObject mainMenuPanel;
+    public GameObject creditsPanel;
 
-    void Start()
+    public void OpenCredits()
+    {
+        if (mainMenuPanel != null) mainMenuPanel.SetActive(false);
+        if (creditsPanel != null) creditsPanel.SetActive(true);
+    }
+
+    public void CloseCredits()
+    {
+        if (creditsPanel != null) creditsPanel.SetActive(false);
+        if (mainMenuPanel != null) mainMenuPanel.SetActive(true);
+    }
+
+void Start()
     {
 
     }
@@ -18,7 +34,7 @@ public class QuitPlay : MonoBehaviour
 
    public void Jogar()
     {
-        SceneManager.LoadScene("AdotarGatos");
+        SceneManager.LoadScene("1");
     }
 
 
@@ -27,5 +43,7 @@ public class QuitPlay : MonoBehaviour
         Application.Quit();
         Debug.Log("saiu");
     }
+
+
 
 }

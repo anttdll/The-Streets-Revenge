@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 6300655204294759585}
   - component: {fileID: 4486796102290819163}
   - component: {fileID: 3803748926896161708}
-  - component: {fileID: -1596949307685541540}
-  - component: {fileID: -2817085169167938051}
+  - component: {fileID: 3617518963856091358}
   m_Layer: 0
   m_Name: Lagrima
   m_TagString: gato
@@ -81,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1789893691
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -4650008705399189513, guid: 82d61872ea13fd740a051c2b92b75195,
     type: 3}
@@ -121,7 +120,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &3803748926896161708
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -206,7 +205,7 @@ PolygonCollider2D:
       - {x: 0.0770751, y: 0.08695652}
       - {x: 0.08102767, y: 0.08695652}
   m_UseDelaunayMesh: 0
---- !u!114 &-1596949307685541540
+--- !u!114 &3617518963856091358
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -218,23 +217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a640a8aff5f7b7459d9100d9bc4d7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InimigoProjetil
-  speed: 8
+  speed: 5
   damage: 1
   lifeTime: 3
   frames: []
   animationSpeed: 0.15
---- !u!114 &-2817085169167938051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1015956398870579584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d49ea7a75d1f364ab0935bc8fd26521, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BossProjetil
-  speed: 6
-  damage: 1
-  lifeTime: 4

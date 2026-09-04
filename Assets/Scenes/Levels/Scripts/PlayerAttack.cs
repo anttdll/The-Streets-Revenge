@@ -9,6 +9,9 @@ public class PlayerAttack : MonoBehaviour
 
     [Header("Áudio")]
     public AudioClip meowSound;
+    [Range(0f, 1f)]
+    public float pitchVariationChance = 0.5f; // chance de tocar com pitch diferente
+    public float pitchVariation = 0.15f; // o quanto pode variar o tom
 
     private float fireTimer = 0f;
     private Vector2 shootDirection = Vector2.down;
@@ -61,14 +64,32 @@ public class PlayerAttack : MonoBehaviour
 
         GameObject gato = Instantiate(gatoPrefab, firePoint.position, Quaternion.identity);
         GatoProjetil projetil = gato.GetComponent<GatoProjetil>();
-
         if (projetil != null)
         {
             projetil.Launch(direction);
         }
 
-        if (meowSound != null)
+        PlayMeowSound();
+    }
+
+    void PlayMeowSound()
+    {
+        if (meowSound == null) return;
+
+        if (Random.value <= pitchVariationChance)
         {
+            // toca com pitch variado
+            GameObject tempAudio = new GameObject("TempAudio");
+            tempAudio.transform.position = transform.position;
+            AudioSource source = tempAudio.AddComponent<AudioSource>();
+            source.clip = meowSound;
+            source.pitch = 1f + Random.Range(-pitchVariation, pitchVariation);
+            source.Play();
+            Destroy(tempAudio, meowSound.length / source.pitch);
+        }
+        else
+        {
+            // toca normal, sem variação
             AudioSource.PlayClipAtPoint(meowSound, transform.position);
         }
     }

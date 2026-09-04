@@ -13,7 +13,6 @@ public class Boss : MonoBehaviour
     [Header("Ataque - Rajada radial")]
     public GameObject radialProjetilPrefab;
     public int radialShotCount = 10;
-    public float radialSpeedRandomness = 0.2f;
 
     [Header("Ataque - Tiros que caem")]
     public GameObject lobbedProjetilPrefab;
@@ -23,6 +22,16 @@ public class Boss : MonoBehaviour
     [Header("Timing")]
     public float attackInterval = 3f;
     private float attackTimer;
+    public float attackAnimDuration = 0.5f;
+
+    [Header("Animação")]
+    public Sprite[] walkFrames;
+    public Sprite[] attackFrames;
+    public float animationSpeed = 0.15f;
+    private int currentFrame = 0;
+    private float animTimer = 0f;
+    private bool isAttackingAnim = false;
+    private float attackAnimTimer = 0f;
 
     [Header("Sala")]
     [HideInInspector] public Room parentRoom;
@@ -34,6 +43,10 @@ public class Boss : MonoBehaviour
     private SpriteRenderer sr;
     private Rigidbody2D rb;
     private bool isDead = false;
+    public int contactDamage = 1;
+
+    [Header("Áudio")]
+    public AudioClip deathSound;
 
     void Awake()
     {
@@ -63,30 +76,72 @@ public class Boss : MonoBehaviour
             return;
         }
 
+        if (isAttackingAnim)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
         Vector2 dir = (player.position - transform.position).normalized;
         rb.linearVelocity = dir * moveSpeed;
+
+        if (dir.x != 0) sr.flipX = dir.x < 0;
     }
 
     void Update()
     {
         if (isDead || player == null) return;
-        if (parentRoom != null && (CameraController.Instance.CurrentRoom != parentRoom || !parentRoom.IsActive)) return;
+        if (parentRoom != null && (CameraController.Instance.CurrentRoom != parentRoom || !parentRoom.IsActive))
+        {
+            AnimateAndamento();
+            return;
+        }
+
+        if (isAttackingAnim)
+        {
+            attackAnimTimer -= Time.deltaTime;
+            if (attackAnimTimer <= 0f) isAttackingAnim = false;
+        }
 
         attackTimer -= Time.deltaTime;
         if (attackTimer <= 0f)
         {
+            StartAttackAnim();
             AttackBurst();
             attackTimer = attackInterval;
+        }
+
+        AnimateAndamento();
+    }
+
+    void StartAttackAnim()
+    {
+        isAttackingAnim = true;
+        attackAnimTimer = attackAnimDuration;
+        currentFrame = 0;
+        animTimer = 0f;
+    }
+
+    void AnimateAndamento()
+    {
+        Sprite[] currentSet = isAttackingAnim ? attackFrames : walkFrames;
+        if (currentSet == null || currentSet.Length == 0) return;
+
+        animTimer += Time.deltaTime;
+        if (animTimer >= animationSpeed)
+        {
+            animTimer = 0f;
+            currentFrame = (currentFrame + 1) % currentSet.Length;
+            sr.sprite = currentSet[currentFrame];
         }
     }
 
     void AttackBurst()
     {
-        // 1. Rajada radial (tiros retos espalhados em círculo)
         if (radialProjetilPrefab != null)
         {
             float angleStep = 360f / radialShotCount;
-            float startAngle = Random.Range(0f, 360f); // varia o padrão a cada rajada
+            float startAngle = Random.Range(0f, 360f);
 
             for (int i = 0; i < radialShotCount; i++)
             {
@@ -99,13 +154,12 @@ public class Boss : MonoBehaviour
             }
         }
 
-        // 2. Tiros que sobem e caem, espalhados perto do player
         if (lobbedProjetilPrefab != null)
         {
             for (int i = 0; i < lobbedShotCount; i++)
             {
                 Vector2 randomOffset = Random.insideUnitCircle * lobbedSpreadRadius;
-                Vector3 targetPos = (Vector3)( (Vector2)player.position + randomOffset );
+                Vector3 targetPos = (Vector3)((Vector2)player.position + randomOffset);
 
                 GameObject proj = Instantiate(lobbedProjetilPrefab, transform.position, Quaternion.identity);
                 BossLobbedProjetil lp = proj.GetComponent<BossLobbedProjetil>();
@@ -137,7 +191,27 @@ public class Boss : MonoBehaviour
         isDead = true;
         rb.linearVelocity = Vector2.zero;
 
+        if (deathSound != null) AudioSource.PlayClipAtPoint(deathSound, transform.position);
+
         if (parentRoom != null) parentRoom.NotifyEnemyDefeated(gameObject);
+
+        if (VictoryManager.Instance != null)
+        {
+            VictoryManager.Instance.ShowVictory();
+        }
+
         Destroy(gameObject);
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayerHealth ph = collision.gameObject.GetComponent<PlayerHealth>();
+            if (ph != null)
+            {
+                ph.TakeDamage(contactDamage);
+            }
+        }
     }
 }
