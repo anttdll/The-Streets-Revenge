@@ -192,8 +192,14 @@ public class Boss : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
 
         if (deathSound != null) AudioSource.PlayClipAtPoint(deathSound, transform.position);
-
         if (parentRoom != null) parentRoom.NotifyEnemyDefeated(gameObject);
+
+        // salva a vida do player antes de trocar de cena
+        PlayerHealth ph = FindFirstObjectByType<PlayerHealth>();
+        if (ph != null && GameData.Instance != null)
+        {
+            GameData.Instance.SaveHealth(ph.CurrentHealth, ph.MaxHealth);
+        }
 
         if (VictoryManager.Instance != null)
         {

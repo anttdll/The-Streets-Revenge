@@ -22,7 +22,16 @@ public class PlayerHealth : MonoBehaviour
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        currentHealth = maxHealth;
+
+        if (GameData.Instance != null && GameData.Instance.HasSavedHealth())
+        {
+            maxHealth = GameData.Instance.savedMaxHealth;
+            currentHealth = GameData.Instance.savedCurrentHealth;
+        }
+        else
+        {
+            currentHealth = maxHealth; // primeira vez jogando, vida cheia normal
+        }
     }
 
     public void TakeDamage(int amount)

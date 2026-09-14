@@ -35,6 +35,11 @@ void Start()
    public void Jogar()
     {
         SceneManager.LoadScene("1");
+
+        if (GameData.Instance != null)
+        {
+            GameData.Instance.ResetGame();
+        }
     }
 
 

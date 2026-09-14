@@ -33,6 +33,7 @@ public class Inimigo : MonoBehaviour
     private SpriteRenderer sr;
     private Rigidbody2D rb;
     private bool isDead = false;
+    private float spawnDamageCooldown = 0f;
 
     void Awake()
     {
@@ -40,10 +41,13 @@ public class Inimigo : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
 
+        // Todo inimigo recém-criado começa com 1,5s de proteção
+        spawnDamageCooldown = 1.5f;
+
         if (parentRoom == null)
             parentRoom = GetComponentInParent<Room>();
     }
-
+  
     void Start()
     {
         if (player == null)
@@ -55,9 +59,18 @@ public class Inimigo : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (isDead || player == null) return;
+        if (isDead || player == null)
+            return;
 
-        if (parentRoom != null && (CameraController.Instance.CurrentRoom != parentRoom || !parentRoom.IsActive))
+        // Acabou de nascer
+        if (spawnDamageCooldown > 0f)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
+        if (parentRoom != null &&
+            (CameraController.Instance.CurrentRoom != parentRoom || !parentRoom.IsActive))
         {
             rb.linearVelocity = Vector2.zero;
             return;
@@ -70,13 +83,17 @@ public class Inimigo : MonoBehaviour
         }
 
         Vector2 dir = (player.position - transform.position).normalized;
+
         rb.linearVelocity = dir * moveSpeed;
 
-        if (dir.x != 0) sr.flipX = dir.x < 0;
+        if (dir.x != 0)
+            sr.flipX = dir.x < 0;
     }
-
     void Update()
     {
+        if (spawnDamageCooldown > 0f)
+            spawnDamageCooldown -= Time.deltaTime;
+
         AnimateWalk();
     }
 
@@ -153,9 +170,13 @@ public class Inimigo : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
+        if (spawnDamageCooldown > 0f)
+            return;
+
         if (collision.gameObject.CompareTag("Player"))
         {
             PlayerHealth ph = collision.gameObject.GetComponent<PlayerHealth>();
+
             if (ph != null)
             {
                 ph.TakeDamage(contactDamage);

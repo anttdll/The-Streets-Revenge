@@ -13,6 +13,10 @@ public class EnemySpawner : MonoBehaviour
     public int minEnemies = 2;
     public int maxEnemies = 4;
 
+    [Header("Sistema de waves")]
+    public int totalWaves = 2;
+    private int currentWave = 0;
+
     private Room room;
 
     void Awake()
@@ -22,7 +26,23 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
-        SpawnRandomEnemies();
+        SpawnWave();
+    }
+
+    void SpawnWave()
+    {
+        currentWave++;
+        SpawnRandomEnemies(); 
+    }
+
+    public bool HasMoreWaves()
+    {
+        return currentWave < totalWaves;
+    }
+
+    public void SpawnNextWave()
+    {
+        SpawnWave();
     }
 
     void SpawnRandomEnemies()
@@ -43,11 +63,13 @@ public class EnemySpawner : MonoBehaviour
 
             // registra o inimigo na sala (funciona pra qualquer tipo)
             Inimigo inimigoComum = enemyInstance.GetComponent<Inimigo>();
+
             if (inimigoComum != null)
             {
                 inimigoComum.parentRoom = room;
+                
+
                 room.enemies.Add(enemyInstance);
-                Debug.Log("Adicionado inimigo. Total agora: " + room.enemies.Count);
             }
 
             InimigoAtirador atirador = enemyInstance.GetComponent<InimigoAtirador>();
@@ -59,9 +81,5 @@ public class EnemySpawner : MonoBehaviour
             }
         }
 
-        if (room.enemies.Count == 0)
-        {
-            room.ForceMarkCleared();
-        }
     }
 }

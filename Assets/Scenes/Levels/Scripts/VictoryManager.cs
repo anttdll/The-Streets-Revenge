@@ -8,6 +8,11 @@ public class VictoryManager : MonoBehaviour
     [Header("UI")]
     public GameObject victoryPanel;
 
+    [Header("Próxima cena")]
+    public string nextSceneName;
+    public string menu;
+    public string Recomeca;
+
     private void Awake()
     {
         Instance = this;
@@ -20,13 +25,37 @@ public class VictoryManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
+    public void GoToNextLevel()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(nextSceneName);
+    }
+
+    public void Menuzin()
+    {
+        Time.timeScale = 1f;
+
+        if (GameData.Instance != null)
+        {
+            GameData.Instance.ResetGame();
+        }
+
+        SceneManager.LoadScene(menu);
+    }
+
+
     public void Restart()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-    public void MenuCarregar()
-    {
-        SceneManager.LoadScene("Menu");
+
+        // Reseta os dados do jogo
+        if (GameData.Instance != null)
+        {
+            GameData.Instance.ResetGame();
+        }
+
+
+        SceneManager.LoadScene(Recomeca);
+
     }
 }

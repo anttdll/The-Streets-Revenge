@@ -69,11 +69,11 @@ TagManager:
   - name: Player
     uniqueID: 3806130439
     locked: 0
-  - name: Ui
-    uniqueID: 2600471749
-    locked: 0
   - name: Obstaculo
     uniqueID: 4183915127
+    locked: 0
+  - name: Ui
+    uniqueID: 2600471749
     locked: 0
   m_RenderingLayers:
   - Default

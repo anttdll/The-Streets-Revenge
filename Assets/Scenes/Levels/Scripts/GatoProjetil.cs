@@ -8,8 +8,9 @@ public class GatoProjetil : MonoBehaviour
     public float lifeTime = 2f;
 
     [Header("Animação")]
-    public Sprite[] frames; // Arraste os 3 Sprites fatiados aqui
-    public float animationSpeed = 0.15f; // Velocidade da troca de quadros
+    public Sprite[] frames;
+    public float animationSpeed = 0.15f;
+
     private SpriteRenderer sr;
     private int currentFrame = 0;
     private float timer;
@@ -31,8 +32,7 @@ public class GatoProjetil : MonoBehaviour
     {
         Destroy(gameObject, lifeTime);
 
-        // Garante que a bala comece no primeiro quadro da animação
-        if (frames.Length > 0)
+        if (frames != null && frames.Length > 0)
         {
             sr.sprite = frames[0];
         }
@@ -40,7 +40,6 @@ public class GatoProjetil : MonoBehaviour
 
     void Update()
     {
-        // Lógica da animação (roda sempre)
         AnimateProjectile();
     }
 
@@ -52,19 +51,18 @@ public class GatoProjetil : MonoBehaviour
         }
     }
 
-    // Método para fazer o loop da animação
     void AnimateProjectile()
     {
-        if (frames.Length <= 1) return; // Se não tiver frames, não anima
+        if (frames == null || frames.Length <= 1)
+            return;
 
         timer += Time.deltaTime;
 
         if (timer >= animationSpeed)
         {
-            timer = 0;
+            timer = 0f;
             currentFrame++;
 
-            // Se chegou no último quadro, volta para o primeiro (loop)
             if (currentFrame >= frames.Length)
             {
                 currentFrame = 0;
@@ -83,32 +81,105 @@ public class GatoProjetil : MonoBehaviour
             rb.linearVelocity = direction * speed;
         }
 
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, angle);
+        float angle =
+            Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+        transform.rotation =
+            Quaternion.Euler(0, 0, angle);
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Boss boss = other.GetComponent<Boss>();
-        if (boss != null) boss.TakeDamage(damage);
+        if (hasHit)
+            return;
 
-        if (hasHit) return;
+        // =========================
+        // BOSS 1
+        // =========================
+
+        Boss boss = other.GetComponent<Boss>();
+
+        if (boss != null)
+        {
+            hasHit = true;
+
+            boss.TakeDamage(damage);
+
+            SpawnHitEffect();
+
+            Destroy(gameObject);
+            return;
+        }
+
+        // =========================
+        // BOSS 2
+        // =========================
+
+        Boss2 boss2 = other.GetComponent<Boss2>();
+
+        if (boss2 != null)
+        {
+            hasHit = true;
+
+            boss2.TakeDamage(damage);
+
+            SpawnHitEffect();
+
+            Destroy(gameObject);
+            return;
+        }
+
+        // =========================
+        // INIMIGOS
+        // =========================
+
         if (other.CompareTag("Inimigo"))
         {
             hasHit = true;
 
-            Inimigo inimigo = other.GetComponent<Inimigo>();
-            if (inimigo != null) inimigo.TakeDamage(damage);
+            Inimigo inimigo =
+                other.GetComponent<Inimigo>();
 
-            InimigoAtirador atirador = other.GetComponent<InimigoAtirador>();
-            if (atirador != null) atirador.TakeDamage(damage);
+            if (inimigo != null)
+            {
+                inimigo.TakeDamage(damage);
+            }
 
-            if (hitEffect != null) Instantiate(hitEffect, transform.position, Quaternion.identity);
+            InimigoAtirador atirador =
+                other.GetComponent<InimigoAtirador>();
+
+            if (atirador != null)
+            {
+                atirador.TakeDamage(damage);
+            }
+
+            SpawnHitEffect();
+
             Destroy(gameObject);
+            return;
         }
+
+        // =========================
+        // PAREDE
+        // =========================
+
         if (other.CompareTag("Wall"))
         {
+            hasHit = true;
+
             Destroy(gameObject);
+        }
+    }
+
+    void SpawnHitEffect()
+    {
+        if (hitEffect != null)
+        {
+            Instantiate(
+                hitEffect,
+                transform.position,
+                Quaternion.identity
+            );
         }
     }
 }

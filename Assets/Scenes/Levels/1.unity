@@ -17068,6 +17068,7 @@ MonoBehaviour:
   doors:
   - {fileID: 534777588}
   - {fileID: 1046417749}
+  nextWaveSound: {fileID: 8300000, guid: 3e922a1dc4b8f594b9122aee049eb26e, type: 3}
 --- !u!61 &85444415
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17157,6 +17158,7 @@ MonoBehaviour:
   - {fileID: 605828086}
   minEnemies: 2
   maxEnemies: 4
+  totalWaves: 2
 --- !u!1 &105502292
 GameObject:
   m_ObjectHideFlags: 0
@@ -18298,6 +18300,7 @@ MonoBehaviour:
   - {fileID: 2063830253}
   - {fileID: 1046417749}
   - {fileID: 1575363618}
+  nextWaveSound: {fileID: 8300000, guid: 3e922a1dc4b8f594b9122aee049eb26e, type: 3}
 --- !u!61 &420156270
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18362,7 +18365,6 @@ Transform:
   - {fileID: 147523382}
   - {fileID: 1182543420}
   - {fileID: 558861426}
-  - {fileID: 834484721}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &420156272
@@ -18388,6 +18390,7 @@ MonoBehaviour:
   - {fileID: 558861426}
   minEnemies: 2
   maxEnemies: 4
+  totalWaves: 2
 --- !u!1 &429092093
 GameObject:
   m_ObjectHideFlags: 0
@@ -18643,7 +18646,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1384671580}
         m_TargetAssemblyTypeName: VictoryManager, Assembly-CSharp
-        m_MethodName: MenuCarregar
+        m_MethodName: Menuzin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19245,7 +19248,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624862990}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -19254,7 +19257,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 66.6, y: -10.95}
+  m_AnchoredPosition: {x: 65.3, y: -13.9}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &624862992
@@ -19277,7 +19280,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Restart
+  m_text: Next Level
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 06935e8eba878024fa95911c32e03f63, type: 2}
   m_sharedMaterial: {fileID: -8234248896309098829, guid: 06935e8eba878024fa95911c32e03f63,
@@ -19305,8 +19308,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21
-  m_fontSizeBase: 21
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -20020,6 +20023,7 @@ MonoBehaviour:
   - {fileID: 1046417749}
   - {fileID: 1575363618}
   - {fileID: 2063830253}
+  nextWaveSound: {fileID: 8300000, guid: 3e922a1dc4b8f594b9122aee049eb26e, type: 3}
 --- !u!61 &834484720
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20075,14 +20079,14 @@ Transform:
   m_GameObject: {fileID: 834484718}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 9.955067, z: 0}
+  m_LocalPosition: {x: 0.99, y: 51.169453, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1507981161}
   - {fileID: 587042970}
   - {fileID: 1149528578}
-  m_Father: {fileID: 420156271}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &834484722
 MonoBehaviour:
@@ -20105,6 +20109,7 @@ MonoBehaviour:
   - {fileID: 1149528578}
   minEnemies: 2
   maxEnemies: 4
+  totalWaves: 2
 --- !u!1 &851696416
 GameObject:
   m_ObjectHideFlags: 0
@@ -20141,6 +20146,7 @@ MonoBehaviour:
   enemies: []
   doors:
   - {fileID: 1801734627}
+  nextWaveSound: {fileID: 8300000, guid: 3e922a1dc4b8f594b9122aee049eb26e, type: 3}
 --- !u!61 &851696420
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21103,6 +21109,52 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 11.100137, y: 0.2883396}
   m_EdgeRadius: 0
+--- !u!1 &1102414035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1102414037}
+  - component: {fileID: 1102414036}
+  m_Layer: 23
+  m_Name: GameData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1102414036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102414035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d787439a5077be44d8919c2c862f4759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameData
+  savedCurrentHealth: -1
+  savedMaxHealth: -1
+--- !u!4 &1102414037
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102414035}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.2909374, y: 58.12291, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1109742014
 GameObject:
   m_ObjectHideFlags: 0
@@ -22386,6 +22438,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VictoryManager
   victoryPanel: {fileID: 1914810653}
+  nextSceneName: 2
+  menu: Menu
 --- !u!1 &1388137258
 GameObject:
   m_ObjectHideFlags: 0
@@ -22502,6 +22556,7 @@ MonoBehaviour:
   doors:
   - {fileID: 1238344897}
   - {fileID: 534777588}
+  nextWaveSound: {fileID: 8300000, guid: 3e922a1dc4b8f594b9122aee049eb26e, type: 3}
 --- !u!61 &1422749842
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22557,7 +22612,7 @@ Transform:
   m_GameObject: {fileID: 1422749839}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 9.539999, z: 0}
+  m_LocalPosition: {x: 0.99, y: 18.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22567,7 +22622,7 @@ Transform:
   - {fileID: 1372244980}
   - {fileID: 1693799710}
   - {fileID: 1166176603}
-  m_Father: {fileID: 1971824509}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1422749844
 MonoBehaviour:
@@ -22593,6 +22648,7 @@ MonoBehaviour:
   - {fileID: 410797587}
   minEnemies: 3
   maxEnemies: 6
+  totalWaves: 2
 --- !u!1 &1427108521
 GameObject:
   m_ObjectHideFlags: 0
@@ -24114,9 +24170,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1384671578}
-        m_TargetAssemblyTypeName: GameOverManager, Assembly-CSharp
-        m_MethodName: Restart
+      - m_Target: {fileID: 1384671580}
+        m_TargetAssemblyTypeName: VictoryManager, Assembly-CSharp
+        m_MethodName: GoToNextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24202,6 +24258,7 @@ MonoBehaviour:
   - {fileID: 2828443878741742175}
   doors:
   - {fileID: 2063830253}
+  nextWaveSound: {fileID: 8300000, guid: 3e922a1dc4b8f594b9122aee049eb26e, type: 3}
 --- !u!61 &1805215182
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28806,6 +28863,7 @@ MonoBehaviour:
   doors:
   - {fileID: 1238344897}
   - {fileID: 1801734627}
+  nextWaveSound: {fileID: 8300000, guid: 3e922a1dc4b8f594b9122aee049eb26e, type: 3}
 --- !u!61 &1971824508
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28868,7 +28926,6 @@ Transform:
   - {fileID: 163984732}
   - {fileID: 514130161}
   - {fileID: 105502293}
-  - {fileID: 1422749843}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1971824510
@@ -28892,6 +28949,7 @@ MonoBehaviour:
   - {fileID: 105502293}
   minEnemies: 2
   maxEnemies: 3
+  totalWaves: 1
 --- !u!1 &1976969302
 GameObject:
   m_ObjectHideFlags: 0
@@ -30040,12 +30098,12 @@ PrefabInstance:
     - target: {fileID: 2014858421156073684, guid: 5b5c3253eb1342a4db7c0b08facc9d02,
         type: 3}
       propertyPath: maxHealth
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2813077294024788680, guid: 5b5c3253eb1342a4db7c0b08facc9d02,
         type: 3}
       propertyPath: fireRate
-      value: 0.322
+      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 2813077294024788680, guid: 5b5c3253eb1342a4db7c0b08facc9d02,
         type: 3}
@@ -30126,8 +30184,10 @@ SceneRoots:
   - {fileID: 914664993}
   - {fileID: 1893404762}
   - {fileID: 851696421}
+  - {fileID: 1422749843}
   - {fileID: 1971824509}
   - {fileID: 85444416}
+  - {fileID: 834484721}
   - {fileID: 420156271}
   - {fileID: 1805215183}
   - {fileID: 1238344896}
@@ -30155,4 +30215,5 @@ SceneRoots:
   - {fileID: 862033436}
   - {fileID: 695018725}
   - {fileID: 995087566}
+  - {fileID: 1102414037}
   - {fileID: 772059647}

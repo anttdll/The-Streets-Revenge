@@ -16,12 +16,14 @@ public class Room : MonoBehaviour
     private bool playerEntered = false;
     public bool IsActive { get; private set; } = true; // salas sem trava começam ativas
 
+    [Header("Áudio")]
+    public AudioClip nextWaveSound;
     private void Awake()
     {
         BoxCollider2D box = GetComponent<BoxCollider2D>();
         box.isTrigger = true;
         roomBounds = box.bounds;
-        // NÃO detecta inimigos aqui — quem registra é o EnemySpawner
+        //registrar = enemyspawner
     }
 
     // chamado pelo RoomTrigger quando o player entra na sala
@@ -32,6 +34,7 @@ public class Room : MonoBehaviour
 
         if (!roomCleared && enemies.Count > 0)
         {
+            PauseRoomActivity(0.5f);
             foreach (Door d in doors) if (d != null) d.Lock();
         }
     }
@@ -54,9 +57,43 @@ public class Room : MonoBehaviour
 
         if (enemies.Count == 0 && !roomCleared)
         {
-            roomCleared = true;
-            UnlockDoors();
+            EnemySpawner spawner = GetComponent<EnemySpawner>();
+
+            if (spawner != null && spawner.HasMoreWaves())
+            {
+                StartCoroutine(SpawnNextWaveDelayed(spawner));
+            }
+            else
+            {
+                roomCleared = true;
+                foreach (Door d in doors) if (d != null) d.Unlock();
+            }
         }
+    }
+
+
+    private System.Collections.IEnumerator SpawnNextWaveDelayed(EnemySpawner spawner)
+    {
+        yield return new WaitForSeconds(1f);
+
+        spawner.SpawnNextWave();
+
+        if (nextWaveSound != null) AudioSource.PlayClipAtPoint(nextWaveSound, transform.position);
+
+        PauseRoomActivity(3f);
+    }
+
+    private void PauseRoomActivity(float duration)
+    {
+        StopCoroutine(nameof(ActivateRoomDelayed));
+        StartCoroutine(ActivateRoomDelayed(duration));
+    }
+
+    private System.Collections.IEnumerator ActivateRoomDelayed(float duration)
+    {
+        IsActive = false;
+        yield return new WaitForSeconds(duration);
+        IsActive = true;
     }
 
     private void LockDoors()

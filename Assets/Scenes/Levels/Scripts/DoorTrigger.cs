@@ -15,11 +15,9 @@ public class DoorTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Player")) return;
+        if (!other.CompareTag("Player") || isTeleporting) return;
 
         playerInside = true;
-
-        if (isTeleporting) return;
 
         Room current = CameraController.Instance.CurrentRoom;
         Room target = null;
@@ -29,7 +27,7 @@ public class DoorTrigger : MonoBehaviour
 
         if (target != null)
         {
-            TeleportPlayer(other.transform, target);
+            TeleportPlayer(other.transform, current, target);
         }
     }
 
@@ -41,7 +39,7 @@ public class DoorTrigger : MonoBehaviour
         }
     }
 
-    private void TeleportPlayer(Transform player, Room target)
+    private void TeleportPlayer(Transform player, Room current, Room target)
     {
         isTeleporting = true;
 
@@ -51,14 +49,15 @@ public class DoorTrigger : MonoBehaviour
 
         if (direction == DoorDirection.Horizontal)
         {
-            bool enteringFromLeft = playerPos.x < transform.position.x;
+            // decide baseado no centro das salas, não na posição do player
+            bool enteringFromLeft = current.roomBounds.center.x < target.roomBounds.center.x;
             newPos.x = enteringFromLeft
                 ? targetBounds.min.x + edgeMargin
                 : targetBounds.max.x - edgeMargin;
         }
-        else
+        else // Vertical
         {
-            bool enteringFromBelow = playerPos.y < transform.position.y;
+            bool enteringFromBelow = current.roomBounds.center.y < target.roomBounds.center.y;
             newPos.y = enteringFromBelow
                 ? targetBounds.min.y + edgeMargin
                 : targetBounds.max.y - edgeMargin;
@@ -69,7 +68,9 @@ public class DoorTrigger : MonoBehaviour
         CameraController.Instance.SetCurrentRoom(target);
         target.OnPlayerEnter();
 
-        playerInside = false; // já foi teleportado pra longe, não está mais "dentro"
+        playerInside = false;
         isTeleporting = false;
     }
+
+
 }
