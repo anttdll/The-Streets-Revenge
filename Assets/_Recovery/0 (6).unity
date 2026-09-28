@@ -32512,7 +32512,6 @@ GameObject:
   - component: {fileID: 2024415701}
   - component: {fileID: 2024415700}
   - component: {fileID: 2024415699}
-  - component: {fileID: 2024415702}
   m_Layer: 24
   m_Name: Restart
   m_TagString: Untagged
@@ -32635,20 +32634,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024415697}
   m_CullTransparentMesh: 1
---- !u!114 &2024415702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2024415697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cac20f04aeb57c34a9409c058ef6763a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::efeitoBotao
-  multiplicadorEscala: 1.1
-  velocidadeTransicao: 15
 --- !u!1 &2063830252
 GameObject:
   m_ObjectHideFlags: 0
