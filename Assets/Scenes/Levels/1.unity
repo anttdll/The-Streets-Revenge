@@ -24750,6 +24750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VictoryManager
   victoryPanel: {fileID: 1914810653}
   nextSceneName: 2
+  nextSceneName2: 3
   menu: Menu
   Recomeca: 
 --- !u!1 &1388137258

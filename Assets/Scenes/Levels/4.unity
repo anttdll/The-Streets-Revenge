@@ -708,7 +708,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 14.419889, y: 8.583431}
+  m_Size: {x: 10.419889, y: 6.5834312}
   m_EdgeRadius: 0
 --- !u!4 &277353338
 Transform:
@@ -2162,7 +2162,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.71633625, y: -1.5181532}
+  m_Offset: {x: -0.72104406, y: -1.5181532}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2172,7 +2172,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 14.494467, y: 7.587946}
+  m_Size: {x: 27.388031, y: 7.587946}
   m_EdgeRadius: 0
 --- !u!4 &829680618
 Transform:
@@ -3634,6 +3634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VictoryManager
   victoryPanel: {fileID: 1339282701}
   nextSceneName: 2
+  nextSceneName2: 
   menu: Menu
   Recomeca: 1
 --- !u!114 &1469574465
@@ -5596,8 +5597,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 396655921}
   - {fileID: 1327203789}
-  - {fileID: 2107042807}
-  - {fileID: 1075842361}
   - {fileID: 334706770}
   - {fileID: 1849478396}
   - {fileID: 1853531769}
@@ -5607,13 +5606,15 @@ SceneRoots:
   - {fileID: 233343251}
   - {fileID: 480400077}
   - {fileID: 1308398334}
-  - {fileID: 277353338}
   - {fileID: 1975210703}
   - {fileID: 1149516282}
   - {fileID: 1469574466}
   - {fileID: 1843034778}
-  - {fileID: 1597201698}
-  - {fileID: 829680618}
-  - {fileID: 1660678518}
   - {fileID: 123032462}
+  - {fileID: 829680618}
+  - {fileID: 277353338}
+  - {fileID: 1075842361}
+  - {fileID: 2107042807}
+  - {fileID: 1597201698}
+  - {fileID: 1660678518}
   - {fileID: 1815604631}

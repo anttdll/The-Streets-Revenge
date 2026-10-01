@@ -1,3 +1,4 @@
+using System.Xml;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,7 @@ public class VictoryManager : MonoBehaviour
 
     [Header("Próxima cena")]
     public string nextSceneName;
+    public string nextSceneName2;
     public string menu;
     public string Recomeca;
 
@@ -29,7 +31,14 @@ public class VictoryManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(nextSceneName);
+        if (SceneManager.GetActiveScene().name == "2")
+        {
+            SceneManager.LoadScene(nextSceneName2);
+
+        }
     }
+
+    
 
     public void Menuzin()
     {
