@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9222572900320277398}
   - component: {fileID: 9134975571475522900}
   - component: {fileID: 507071640211234508}
+  - component: {fileID: -4431632265826006671}
   m_Layer: 0
   m_Name: Inimigo
   m_TagString: Inimigo
@@ -210,3 +211,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 10
   parentRoom: {fileID: 0}
+--- !u!114 &-4431632265826006671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2828443878184214787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27bed1ae29d23b6499cdaf6759ff09a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HpDrop
+  hpDropPrefab: {fileID: 3065684653625027290, guid: 30e82d60660d02640ab03e15e6b04042,
+    type: 3}
+  dropChance: 0.203
+  dropRadius: 0.5

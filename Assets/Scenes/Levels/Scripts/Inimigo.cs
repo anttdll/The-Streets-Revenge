@@ -151,6 +151,7 @@ public class Inimigo : MonoBehaviour
         if (deathSound != null) AudioSource.PlayClipAtPoint(deathSound, transform.position);
 
         HpDrop hpDrop = GetComponent<HpDrop>();
+        Debug.Log("HpDrop encontrado? " + (hpDrop != null));
         if (hpDrop != null) hpDrop.Dropar();
 
         if (parentRoom != null)
