@@ -18,7 +18,12 @@ public class PlayerHealth : MonoBehaviour
 
     public int CurrentHealth => currentHealth;
     public int MaxHealth => maxHealth;
-
+    public bool IsFullHealth => currentHealth >= maxHealth;
+    public void Heal(int amount)
+    {
+        if (isDead) return;
+        currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
+    }
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
