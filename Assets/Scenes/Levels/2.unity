@@ -1445,7 +1445,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0457716, y: 72.92552}
+  m_Offset: {x: 0.36915827, y: 78.34266}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1455,7 +1455,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 16.570318, y: 1.591919}
+  m_Size: {x: 26.436417, y: 12.426193}
   m_EdgeRadius: 0
 --- !u!1 &388545438
 GameObject:
@@ -1735,7 +1735,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -8.049628, y: 67.36141}
+  m_Offset: {x: -12.982677, y: 67.36141}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1745,7 +1745,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5626044, y: 12.720139}
+  m_Size: {x: 10.428703, y: 12.720139}
   m_EdgeRadius: 0
 --- !u!1 &396680626
 GameObject:
@@ -2644,7 +2644,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HpDrop
   hpDropPrefab: {fileID: 0}
-  dropChance: 0.3
+  dropChance: 0.2
+  dropRadius: 0.5
 --- !u!4 &538566336
 Transform:
   m_ObjectHideFlags: 0
@@ -4947,7 +4948,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 8.480887, y: 67.36141}
+  m_Offset: {x: 17.378819, y: 67.36141}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4957,7 +4958,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.76176643, y: 12.720139}
+  m_Size: {x: 18.557625, y: 12.720139}
   m_EdgeRadius: 0
 --- !u!1 &1036138785
 GameObject:
