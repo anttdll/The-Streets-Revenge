@@ -4269,7 +4269,7 @@ PrefabInstance:
         type: 3}
       propertyPath: meowSound
       value: 
-      objectReference: {fileID: 8300000, guid: 087697adbf07e56418025f9182853170, type: 3}
+      objectReference: {fileID: 8300000, guid: 86a13fb232809844c911133839cb1c60, type: 3}
     - target: {fileID: 2813077294024788680, guid: 5b5c3253eb1342a4db7c0b08facc9d02,
         type: 3}
       propertyPath: pitchVariation
@@ -5242,7 +5242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1139723257
 MonoBehaviour:
   m_ObjectHideFlags: 0
