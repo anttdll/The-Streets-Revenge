@@ -7,12 +7,15 @@ namespace DialogueSystem
     public class DialogueBaseClass : MonoBehaviour
     {
 
-      [SerializeField] protected private IEnumerator WriteText(string input, Text textHolder)
+      protected private IEnumerator WriteText(string input, Text textHolder, Color textColor, Font textFont, float delay)
         {
+            textHolder.color = textColor;
+            textHolder.font = textFont;
+
             for (int i = 0; i < input.Length; i++)
             {
                 textHolder.text += input[i];
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(delay);
             }
         }
     }
