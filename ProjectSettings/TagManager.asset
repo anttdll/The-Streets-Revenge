@@ -75,5 +75,11 @@ TagManager:
   - name: Ui
     uniqueID: 2600471749
     locked: 0
+  - name: "decora\xE7\xF5es"
+    uniqueID: 990350205
+    locked: 0
+  - name: "decora\xE7\xF5es sob algo"
+    uniqueID: 2226229335
+    locked: 0
   m_RenderingLayers:
   - Default
